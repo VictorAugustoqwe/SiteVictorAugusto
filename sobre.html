@@ -12,30 +12,23 @@
         <title>Sobre Victor</title>
 
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #B3D5FF;">
-            <a class="navbar-brand" href="../SiteVictorAugusto/index.html">Kiwi</a>
+            <a class="navbar-brand" href="../SiteVictorAugusto/index.html"><img src="imagens/logo.svg" height="40px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav">
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link" href="../SiteVictorAugusto/index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                   <a class="nav-link" href="../SiteVictorAugusto/sobre.html">Sobre</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
+                  <a class="nav-link" href="../SiteVictorAugusto/repertorio.html">Repertório</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown link
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="../SiteVictorAugusto/contato.html">Contato</a>
                 </li>
               </ul>
             </div>
@@ -43,32 +36,42 @@
     </head>
     <body>
         <header class="tituloCentralizado">
-            <h1>Sobre</h1>
+            <h1>Sobre mim</h1>
         </header>
         <main>
-            <div>
-                Olá, Eu sou Victor Augusto de Lima Cruz, estudante de Sistemas de Informação na Universidade Federal de Minas Gerais(UFMG) em 2020/1. Gosto de música, jogos, animes e séries em geral.     
-            </div>
-            <div>
-              <img src="../SiteVictorAugusto/imagens/minhafoto.jpeg">
+            <div id="conteudo-sobre">
+              <div id="descricao">
+                  <p>Olá Amigo,</p>
+                  <p>Eu sou Victor Augusto de Lima Cruz, tenho 19 anos e sou estudante de Sistemas de Informação na Universidade Federal de Minas Gerais(UFMG) e ingressei em 2020/1, o fatídico ano da pandemia de Covid-19.</p>
+                  <p>Para aguentar essa quarentena meus principais hoobies tem sido jogar com amigos (Alguns desses são pessoas incríveis que pude conhecer nesses últimos tempos), ver séries/animes e tocar instrumentros, violão, guitarra e agora estou começando a tocar piano :)</p>
+                  <p>Além disso tenho gostado bastante de programar, fiz alguns joguinhos bem bobinhos em C tipo jogo da velha e campo minado</p>
+                  <p>Para finalizar minha descrição, acho que uma característica marcante minha é que gosto bastante de desafios então sempre procuro desafios no que faço e acho que isso me ajuda a melhorar, seja tentando programar coisas que acho que não sei ainda, ou jogando jogos desafiadores ou aprendendo músicas mais difíceis.</p>     
+              </div>
+                <figure id="fotosobre">
+                  <img src="../SiteVictorAugusto/imagens/minhafoto.jpeg" id="fotosobreimg" width="80%">
+                  <figcaption>Eu</figcaption>
+                </figure>
             </div>
         </main>
         <footer class="footer navbar-fixed-bottom">
-            <div id="mensagem">Site do Kiwi - @2020 todos os direitos reservados</div>
+            <div id="textofooter">Site do Kiwi - @2020 todos os direitos reservados</div>
             <div id="redes">
-                <span id="twitter">
-                    <a href="https://twitter.com/Victor1adlc"><img src="../SiteVictorAugusto/imagens/Twitterlogo.png" height="60"></a>
-                </span>
-                <span id="youtube">
-                    <a href="https://www.youtube.com/channel/UCOQLpaLIdz2DSFVQeLuxWjQ"><img src="../SiteVictorAugusto/imagens/youtubelogo.png" height="50"></a>
-                </span>
-                <span id="insta">
-                    <a href="https://www.instagram.com/victor1adlc/"><img src="../SiteVictorAugusto/imagens/instalogo.png" height="65"></a>
-                </span>
-                <span id="facebook">
-                    <a href="https://www.facebook.com/vaugustocruz/"><img src="../SiteVictorAugusto/imagens/facebooklogo.png" height="50"></a>
-                </span>
-            </div>
+              <span id="github">
+                <a href="https://github.com/VictorAugustoqwe"><img src="../SiteVictorAugusto/imagens/githublogo.png" height="65"></a>
+              </span>
+              <span id="twitter">
+                <a href="https://twitter.com/Victor1adlc"><img src="../SiteVictorAugusto/imagens/Twitterlogo.png" height="60"></a>
+              </span>
+              <span id="youtube">
+                <a href="https://www.youtube.com/channel/UCOQLpaLIdz2DSFVQeLuxWjQ"><img src="../SiteVictorAugusto/imagens/youtubelogo.png" height="50"></a>
+              </span>
+              <span id="insta">
+                <a href="https://www.instagram.com/victor1adlc/"><img src="../SiteVictorAugusto/imagens/instalogo.png" height="65"></a>
+              </span>
+              <span id="facebook">
+                <a href="https://www.facebook.com/vaugustocruz/"><img src="../SiteVictorAugusto/imagens/facebooklogo.png" height="50"></a>
+              </span>
+          </div>
         </footer>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

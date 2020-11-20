@@ -7,10 +7,13 @@ body{
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    background-color:#E6F1FF;
+    background-image:url(../SiteVictorAugusto/imagens/testebg.png);
 }
 
 footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     font-family: 'Roboto', sans-serif;
     background-color: #CCCCCC;
     min-height: 80px;
@@ -18,32 +21,236 @@ footer{
     padding-left: 1%;
 }
 
+.active{
+    border-bottom:0.1rem solid #4F739E;
+}
+
 .tituloCentralizado{
-    margin-top: 1%;
+    margin-top: 2%;
     text-align: center;
 }
 
-.centralizado{
+#textofooter{
+    margin-top: 1.5%;
+}
+
+#redes{
+    margin-right: 1%;
+    margin-top: 0.2%;
+}
+
+#textoindex{
     margin-top: 2%;
     text-align: center;
     margin-bottom: 2%;
 }
 
-#mensagem{
-    margin-top: 1.5%;
-    float: left;
-}
-
-#redes{
-    float: right;
-    margin-right: 1%;
-    margin-top: 0.2%;
-}
-
-#Testecarrossel{
+#carrosselindex{
+    background-color: #B3D5FF;
+    padding: 1%;
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 3%;
     width: 60%;
+    border-radius: 15px;
 
+}
+
+#carouselExampleIndicators:hover{
+    box-shadow: 0 0 10px;
+}
+
+
+
+#conteudo-sobre{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 17%;
+    margin-right: 17%;
+    margin-top: 3%;
+    margin-bottom: 16%;
+    /**background-color: #B3D5FF;*/
+    background-color: rgb(179, 213, 255, 0.8);
+    border-radius: 15px;
+
+}
+#descricao{
+    
+    text-align: justify;
+    margin-right: 5%;
+    width: 40%;
+    min-width: 200px;
+}
+
+#fotosobre{
+    margin-top: 3%;
+    margin-left: 1%;
+    text-align: left;
+    width: 30%;
+    text-align: center;
+    min-width: 200px;
+}
+
+#fotosobreimg:hover{
+    box-shadow: 0 0 10px;
+}
+
+#conteudo-repertorio{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    /**background-color: #B3D5FF;*/
+    background-color: rgb(179, 213, 255, 0.8);
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
+    margin-bottom: 16%;
+    padding: 1%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    border-radius: 15px;
+}
+
+#textorepertorio{
+    width: 40%;
+    text-align: justify;
+    padding: 1.5%;
+    background-color: rgb(79, 115, 158,0.3);
+    margin: auto;
+    margin-bottom: 3%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #4F739E;
+    border-radius: 15px;
+    font-size: 1.10rem;
+}
+
+#botoesrepertorio{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#tabelasrepertorio{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.btn-primary{
+    background-color: #4F739E;
+}
+
+.btn-primary:hover{
+    background-color: rgb(79, 115, 158,0.8);
+}
+
+.btn-primary:active{
+    background-color: rgb(79, 115, 158,0.8);
+}
+
+.btn-selected{
+    background-color: rgb(79, 115, 158,0.8) !important;
+}
+
+
+#tabelaviolaodiv{
+    margin-top: 10%;
+}
+
+#tabelaguitarradiv{
+    margin-top: 10%;
+}
+
+#tabelapianodiv{
+    margin-top: 10%;
+}
+
+
+
+table.tabelainstrumento td, table.tabelainstrumento th{
+    padding: 0.75rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.25rem;
+    border:2px solid #4F739E;
+}
+
+
+.cantodirtab{
+    border-right: none !important;
+}
+
+.cantoesqtab{
+    border-left: none !important;
+}
+
+.cantosuptab{
+    border-top: none !important;
+}
+
+.cantoinftab{
+    border-bottom: none !important;
+}
+
+.hide{
+    display: none;
+}
+
+#conteudo-contato{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 17%;
+    margin-right: 17%;
+    margin-top: 3%;
+    margin-bottom: 16%;
+    /**background-color: #B3D5FF;*/
+    background-color: rgb(179, 213, 255, 0.8);
+    border-radius: 15px;
+
+}
+
+#descricao-contato{
+    text-align: justify;
+    margin: auto;
+    width: 50%;
+    margin-bottom: 2%;
+    padding: 1.5%;
+    min-width: 200px;
+    background-color: rgb(79, 115, 158,0.2);
+    border-width: 2px;
+    border-style: solid;
+    border-color: #4F739E;
+    border-radius: 15px;
+    font-size: 1.10rem;
+}
+
+#formulario{
+    padding: 1.5%;
+    min-width: 200px;
+    background-color: rgb(79, 115, 158,0.3) ;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #4F739E;
+    border-radius: 15px;
+    font-size: 1.10rem;
+    margin: auto;
+    width: 50%;
+}
+
+#avisomeme{
+    margin-top: 2%;
 }

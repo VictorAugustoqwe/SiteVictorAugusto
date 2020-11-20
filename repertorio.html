@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="../SiteVictorAugusto/imagens/logo.svg">
+        <title>Sobre Victor</title>
+
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #B3D5FF;">
+            <a class="navbar-brand" href="../SiteVictorAugusto/index.html"><img src="imagens/logo.svg" height="40px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../SiteVictorAugusto/index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../SiteVictorAugusto/sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../SiteVictorAugusto/repertorio.html">Repertório</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../SiteVictorAugusto/contato.html">Contato</a>
+                    </li>
+              </ul>
+            </div>
+          </nav>
+    </head>
+    <body>
+        <header class="tituloCentralizado">
+            <h1>Meu Repertório</h1>
+        </header>
+        <main>
+            <div id="conteudo-repertorio">
+                <div id="textorepertorio">
+                    <p>Opa, aqui vocês poderão conhecer mais sobre as músicas que sei nos instrumentos que tão aí, decidi colocar isso porque mostra um pouco do que eu curto ouvir quando to programando ou atoa mesmo kkkk
+                </div>
+                <div id="botoesrepertorio">
+                    <button type="button" id="bot-1" class="btn btn-primary btn-selected" onclick="selecionarBotao(1)">Violão</button>
+                    <button type="button" id="bot-2" class="btn btn-primary" onclick="selecionarBotao(2)">Guitarra</button>
+                    <button type="button" id="bot-3" class="btn btn-primary" onclick="selecionarBotao(3)">Piano</button>
+                </div>
+                <div id="tabelasrepertorio">
+                    <div id="tabelaviolaodiv">
+                        <table id="tabelaviolao" class="tabelainstrumento">
+                            <tr>
+                                <th class="cantosuptab cantoesqtab">Nome da música</th>
+                                <th class="cantosuptab">Compositor</th>
+                                <th class="cantosuptab cantodirtab">Terminei de Aprender?</th>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">All I Want</td>
+                                <td>Kodaline</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Aonde quer que eu vá</td>
+                                <td>Paralamas do Sucesso</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Crawling</td>
+                                <td>Linking Park/Eu</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Dear God</td>
+                                <td>Avenged Sevenfold</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Evidências</td>
+                                <td>Chitãozinho & Xororó</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Für Elise</td>
+                                <td>Beethoven</td>
+                                <td class="cantodirtab">Não</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Gurenge</td>
+                                <td>LiSA</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Hikaru Nara</td>
+                                <td>Goose house</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">I See Fire</td>
+                                <td>Ed Sheeran</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Kirameki</td>
+                                <td>Wacci/og3</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Let her go</td>
+                                <td>Passenger</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Meu Erro</td>
+                                <td>Paralamas do sucesso</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Nandemonaiya</td>
+                                <td>RADWIMPS</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Nothing else matters</td>
+                                <td>Metallica</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Photograph</td>
+                                <td>Ed Sheeran</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Nandemonaiya</td>
+                                <td>RADWIMPS</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">River Flows In You</td>
+                                <td>Yiruma/Sungha Jung</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Snow Fairy</td>
+                                <td>Funkist/Fábio Lima</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Snuff</td>
+                                <td>Slipknot</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">So Far Away</td>
+                                <td>Avenged Sevenfold</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Só os Loucos Sabem</td>
+                                <td>Charlie Brown Jr.</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Sorriso Resplandescente</td>
+                                <td>Não sei quem compôs/Eu</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Sparkle</td>
+                                <td>RADWIMPS</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Tempo Perdido</td>
+                                <td>Legião Urbana</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Vermillion pt2</td>
+                                <td>RADWIMPS</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab cantoinftab">Wish you were here</td>
+                                <td class="cantoinftab">Pink Floyd</td>
+                                <td class="cantodirtab cantoinftab">Sim</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="tabelaguitarradiv" class="hide">
+                        <table id="tabelaguitarra" class="tabelainstrumento">
+                            <tr>
+                                <th class="cantosuptab cantoesqtab">Nome da música</th>
+                                <th class="cantosuptab">Compositor</th>
+                                <th class="cantosuptab cantodirtab">Terminei de Aprender?</th>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Aerials</td>
+                                <td>System of a Down</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Back in Black</td>
+                                <td>AC/DC</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Bat Country</td>
+                                <td>Avenged Sevenfolod</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Chopis Centis</td>
+                                <td>Mamonas Assassinas</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Do I Wanna Know</td>
+                                <td>Arctic Monkeys</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Enter Sandman</td>
+                                <td>Metallica</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Highway to Hell</td>
+                                <td>AC/DC</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Hotel California Solo</td>
+                                <td>Eagles</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Seize the Day Solo</td>
+                                <td>Avenged Sevenfold</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab cantoinftab">Unholy Confessions</td>
+                                <td class="cantoinftab">Avenged Sevenfold</td>
+                                <td class="cantodirtab cantoinftab">Sim</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="tabelapianodiv" class="hide">
+                        <table id="tabelapiano" class="tabelainstrumento">
+                            <tr>
+                                <th class="cantosuptab cantoesqtab">Nome da música</th>
+                                <th class="cantosuptab">Compositor</th>
+                                <th class="cantosuptab cantodirtab">Terminei de Aprender?</th>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Brilha brilha Estrelinha</td>
+                                <td>Mozart</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Comptine d`un Autre Ete</td>
+                                <td>Yann Tiersen</td>
+                                <td class="cantodirtab">Sim</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Fantaisie Impromptu</td>
+                                <td>Chopin</td>
+                                <td class="cantodirtab">Não, Nem perto</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab">Nocturne Op.9 No.2</td>
+                                <td>Chopin</td>
+                                <td class="cantodirtab">Não</td>
+                            </tr>
+                            <tr>
+                                <td class="cantoesqtab cantoinftab">Nuvole Bianche</td>
+                                <td class="cantoinftab">Ludovico Einaudi</td>
+                                <td class="cantodirtab cantoinftab">Sim</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        <footer class="footer navbar-fixed-bottom">
+            <div id="textofooter">Site do Kiwi - @2020 todos os direitos reservados</div>
+            <div id="redes">
+                <span id="github">
+                    <a href="https://github.com/VictorAugustoqwe"><img src="../SiteVictorAugusto/imagens/githublogo.png" height="65"></a>
+                </span>
+                <span id="twitter">
+                    <a href="https://twitter.com/Victor1adlc"><img src="../SiteVictorAugusto/imagens/Twitterlogo.png" height="60"></a>
+                </span>
+                <span id="youtube">
+                    <a href="https://www.youtube.com/channel/UCOQLpaLIdz2DSFVQeLuxWjQ"><img src="../SiteVictorAugusto/imagens/youtubelogo.png" height="50"></a>
+                </span>
+                <span id="insta">
+                    <a href="https://www.instagram.com/victor1adlc/"><img src="../SiteVictorAugusto/imagens/instalogo.png" height="65"></a>
+                </span>
+                <span id="facebook">
+                    <a href="https://www.facebook.com/vaugustocruz/"><img src="../SiteVictorAugusto/imagens/facebooklogo.png" height="50"></a>
+                </span>
+            </div>
+        </footer>
+        <script src="repertorio.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    </body>
+</html>
