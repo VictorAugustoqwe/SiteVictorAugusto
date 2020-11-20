@@ -15,7 +15,7 @@ range.oninput = function(){
             valoratual.innerHTML = this.value + " (Você me odeia????)";
             break;
         case "2":
-            valoratual.innerHTML = this.value + " (aff, por que não gostou?)";
+            valoratual.innerHTML = this.value + " (Aff, Por que não gostou?)";
             break;
         case "3":
             valoratual.innerHTML = this.value + " (Ah ok)";
