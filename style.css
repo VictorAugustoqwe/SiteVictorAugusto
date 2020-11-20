@@ -251,6 +251,10 @@ table.tabelainstrumento td, table.tabelainstrumento th{
     width: 50%;
 }
 
+.form-control:hover{
+    box-shadow: 0 0 10px;
+}
+
 #avisomeme{
     margin-top: 2%;
 }
