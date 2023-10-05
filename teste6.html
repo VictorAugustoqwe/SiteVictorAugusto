@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Accelerometer Example</title>
+</head>
+<body>
+  <script>
+    // Check if the device supports the accelerometer sensor.
+    if ('Accelerometer' in window) {
+      // Request permission from the user to access the accelerometer sensor.
+      navigator.permissions.query({ name: "accelerometer" }).then((result) => {
+      if (result.state === "denied") {
+        document.getElementById('saida').innerHTML = "deu ruim";
+        console.log("Permission to use accelerometer sensor is denied.");
+        return;
+      }
+      
+        document.getElementById('saida').innerHTML = "deu bom";
+        // Create a new Accelerometer object.
+        const accelerometer = new Accelerometer();
+        
+        // Listen for accelerometer readings.
+        accelerometer.addEventListener('reading', () => {
+          // Update the DOM with the acceleration data.
+          document.getElementById('x-acceleration').textContent = accelerometer.x;
+          document.getElementById('y-acceleration').textContent = accelerometer.y;
+          document.getElementById('z-acceleration').textContent = accelerometer.z;
+        });
+
+        accelerometer.start();
+      });
+
+    } else {
+      document.getElementById('saida').innerHTML = "deu ruim";
+      console.log('deu tudo errado');
+      // The device does not support the accelerometer sensor.
+    }
+  </script>
+
+  <h1>Accelerometer Example</h1>
+
+  <p>The acceleration data is:</p>
+
+  <ul>
+    <li>X: <span id="x-acceleration"></span></li>
+    <li>Y: <span id="y-acceleration"></span></li>
+    <li>Z: <span id="z-acceleration"></span></li>
+  </ul>
+
+  <h1 id="saida">AAAA</h1>
+</body>
+</html>
