@@ -14,10 +14,11 @@
             window.addEventListener("devicemotion", accelerometerUpdate, true);
         }
         function accelerometerUpdate(ev){
+            debugger
             document.getElementById('Acl').innerHTML= `
             acc = ${event.acceleration.x}
            
-            `;;
+            `;
         }
         /*var AclDiv = document.getElementById('Acl');
 
